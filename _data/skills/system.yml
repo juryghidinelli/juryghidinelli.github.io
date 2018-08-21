@@ -1,0 +1,33 @@
+title: SOFTWARE DI SISTEMA
+skills:
+  - name: Microsoft Windows
+    perc: 70
+
+  - name: Linux (Ubuntu,Debian)
+    perc: 80
+
+  - name: MacOS
+    perc: 80
+
+  - name: Android
+    perc: 60
+
+  - name: Apache
+    perc: 70
+
+  - name: IIS
+    perc: 65
+
+  - name: Docker
+    perc: 70
+
+  - name: Nginx
+    perc: 65
+
+  - name: RabbitMQ
+    perc: 60
+
+
+
+
+

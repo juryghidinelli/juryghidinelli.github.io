@@ -1,0 +1,16 @@
+title: TEMPO LIBERO
+skills:
+  - name: Corsa
+    perc: 70
+
+  - name: Fotografia
+    perc: 65
+
+  - name: Tecnologia
+    perc: 80
+
+  - name: Lavori a casa
+    perc: 95
+
+  - name: Musica
+    perc: 60

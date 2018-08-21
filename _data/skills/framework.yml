@@ -1,0 +1,37 @@
+title: FRAMEWORK
+skills:
+  - name: Ruby on Rails
+    perc: 90
+
+  - name: .NET
+    perc: 70
+
+  - name: JQuery
+    perc: 80
+
+  - name: Alchmey CMS
+    perc: 75
+
+  - name: Solidus e-commerce
+    perc: 70
+
+  - name: ThreeJS
+    perc: 65
+
+  - name: Vue.JS
+    perc: 50
+
+  - name: Sass
+    perc: 60
+
+  - name: ExtJS
+    perc: 65
+
+  - name: Node.JS
+    perc: 65
+
+  - name: Android Studio
+    perc: 60
+
+  - name: Apache Cordova
+    perc: 60

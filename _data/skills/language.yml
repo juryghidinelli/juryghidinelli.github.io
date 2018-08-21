@@ -1,0 +1,46 @@
+title: LINGUAGGI
+skills:
+  - name: Ruby
+    perc: 90
+
+  - name: C
+    perc: 60
+
+  - name: C++
+    perc: 60
+
+  - name: Java
+    perc: 70
+
+  - name: Php
+    perc: 80
+
+  - name: C#
+    perc: 70
+
+  - name: Delphi
+    perc: 70
+
+  - name: Javascript
+    perc: 70
+
+  - name: Visual Basic
+    perc: 80
+
+  - name: Python
+    perc: 40
+
+  - name: Asp.Net
+    perc: 40
+
+  - name: SQL
+    perc: 90
+
+  - name: XML
+    perc: 80
+
+  - name: HTML
+    perc: 90
+
+  - name: CSS
+    perc: 70

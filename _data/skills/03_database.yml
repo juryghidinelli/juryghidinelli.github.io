@@ -1,0 +1,24 @@
+title: DBMS
+skills:
+  - name: Mysql
+    perc: 80
+
+  - name: MS SQL Server
+    perc: 70
+
+  - name: DB2
+    perc: 50
+
+  - name: PostgreSQL
+    perc: 60
+
+  - name: MongoDB
+    perc: 65
+
+  - name: Elasticsearch
+    perc: 70
+
+
+
+
+

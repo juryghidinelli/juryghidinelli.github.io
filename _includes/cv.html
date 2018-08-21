@@ -8,7 +8,10 @@
         <!-- .resume-right -->
         <div class="col-md-6">
 
-            {% for skills in site.data.skills %}
+
+            {% assign datas = site.data.skills | sort %}
+
+            {% for skills in datas %}
             {% assign skill = skills[1] %}
 
             <!-- .title_content -->

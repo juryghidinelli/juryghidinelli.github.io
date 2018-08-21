@@ -1,22 +1,22 @@
 
-title: My Resume
+title: Software Developer
 url: 'http://junlulocky.com'
 baseurl: '/PanelCV' #change it according to your repository name
 
 
 
 # Profile information
-yourname: Brown Smith  ## put your name
-title: 'GRAPHIC &amp; WEB DESIGNER'  ## your title
-location: San Francisco , CA
+yourname: Jury Ghidinelli  ## put your name
+title: 'Software Developer'  ## your title
+location: Brescia, IT
 
 
 ## Social Profiles
-facebook: http://www.facebook.com  ## your facebook account url
-twitter: http://www.twitter.com  ## your twitter account url
-linkedin: http://www.linkedin.com  ## your linkedin account url
-dribbble: http://www.dribble.com  ## you dribbble account url
-foursquare: http://www.foursquare.com  ## your foursquare account url
+facebook: https://www.facebook.com/jury.ghidinelli  ## your facebook account url
+twitter: https://twitter.com/juryghidinelli  ## your twitter account url
+linkedin: https://www.linkedin.com/in/juryghidinelli/  ## your linkedin account url
+github: https://github.com/juryghidinelli  ## you dribbble account url
+instagram: https://www.instagram.com/juryghidinelli  ## your foursquare account url
 
 
 

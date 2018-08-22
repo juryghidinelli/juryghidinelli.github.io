@@ -5,7 +5,7 @@ experiences:
     company: Archimedia
     description: "Socio fondatore della società Archimedia. Nel corso degli anni, mi sono occupato di seguire la parte
     di sviluppo software ed al supporto per la parte di hosting/housing della server farm di proprietà. Oltre agli
-    aspetti tecnicni, mi sono occupato di supervisionare la parte amministrativa e contabile e la parte di gestione
+    aspetti tecnici, mi sono occupato di supervisionare la parte amministrativa e contabile e la parte di gestione
     del personale."
     technology:
 
@@ -88,10 +88,29 @@ experiences:
     technology: Ruby on Rails, Mysql, AS/400, RabbitMQ, Ruby
 
   - work: Applicazioni web
-    period: 2010-2015
+    period: 2011-2015
     company: Archimedia
-    description: ""
-    technology: Ruby on Rails, Mysql, AS/400, RabbitMQ, Ruby
+    description: "Supervisione realizzazione applicazione web per tablet per la gestione del trading on line. Il
+    committente, società di consulenza software per il trading on line per istituti bancari, necessitava di un'applicazione
+    'smart' da proporre ai clienti degli istituti bancari per permettergli un accesso ai dati di trading più semplice
+    edi intuitivo."
+    technology: Ruby on Rails, JQuery, MSSQL Server
+
+  - work: Applicazioni web
+    period: 2015
+    company: Archimedia
+    description: "Sviluppo integrazione in applicazione per il trading on line su piattaforma Java (JSP) di una chat
+    integrata."
+    technology: Java, Jquery
+
+  - work: Applicazioni web
+    period: 2013-2015
+    company: Archimedia
+    description: "Sviluppo e manutenzione applicazione per la gestione delle procedure di controllo di gestione
+    per gli istituti bancari clienti del committente (società fornitrice degli istituti bancari)."
+    technology: Java, GWT
+
+
 
   - work: Dipendente
     period: 1998-1999

@@ -35,3 +35,6 @@ skills:
 
   - name: Apache Cordova
     perc: 60
+
+  - name: Twitter Bootstrap
+    perc: 90

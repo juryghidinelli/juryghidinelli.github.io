@@ -1,5 +1,14 @@
 title: Esperienze
 experiences:
+  - work: Project Manager
+    period: 1999-2018
+    company: Archimedia
+    description: "Socio fondatore della società Archimedia. Nel corso degli anni, mi sono occupato di seguire la parte
+    di sviluppo software ed al supporto per la parte di hosting/housing della server farm di proprietà. Oltre agli
+    aspetti tecnicni, mi sono occupato di supervisionare la parte amministrativa e contabile e la parte di gestione
+    del personale."
+    technology:
+
   - work: Applicazione web
     period: 2017-2018
     company: Archimedia
@@ -12,12 +21,14 @@ experiences:
     technology: Ruby on Rails, VueJS, Alchemy CMS, MongoDB, Mysql, ThreeJS, Linux
 
   - work: Applicazione web
-    period: 2014-2018
+    period: 1998-2018
     company: Archimedia
     description: "Sviluppo e gestione progetto di un'applicazione web per la gestione di iscrizioni, anagrafiche,
     generazione documenti per il calcolo delle rette ai servizi della pubblica amministrazione. L'applicazione si
     compone di 5 moduli distinti (engine) che integralmente costituiscono la suite applicativa. I moduli si differenziano
-    per le tipologie di utenza a cui possono accedere."
+    per le tipologie di utenza a cui possono accedere. L'applicazione descritta è la terza versione rispetto a quella
+    sviluppata dall'anno 1998: la prima versione fu sviluppata in Visual Basic 6.0, la seconda in Microsoft ASP, la terza,
+    quella attuale in Ruby on Rails."
     technology: Ruby on Rails, Mysql, Linux, it Designers Italia
 
   - work: Siti web
@@ -41,5 +52,60 @@ experiences:
     description: "Supervisione e progettazione applicazione per la pianificazione della produzione degli articoli
     prodotti e lavorati dal committente. L'applicazione prevede l'importazione delle commesse di produzione, la
     pianificazione per fasi e macchine, l'aggiornamento dello stato di avanzamento sia manuale che automatico
-    attraverso l'utilizzo delle Api sviluppate"
+    attraverso l'utilizzo delle Api sviluppate."
     technology: Ruby on Rails, Mysql, ExtJS, MSSQLServer, Api Rest
+
+  - work: Applicazione web
+    period: 2010-2018
+    company: Archimedia
+    description: "Supervisione, progettazione e sviluppo applicazione web multitenant per la gestione, la configurazione
+     e l'organizzazione delle procedure di analisi di bilancio, controllo di gestione e consolidamento. L'applicazione,
+     multitenant, multiutente, multiazienda e multigruppo viene venduta dal committente come soluzione 'as a service';
+     completamente configurabile e gestibile da committente."
+    technology: Ruby on Rails, Mysql, ExtJS
+
+  - work: Applicazioni web e client server
+    period: 2006-2018
+    company: Archimedia
+    description: "Sviluppo di varie applicazioni fornite ad un committente della pubblica amministrazione, sviluppate sia
+    con tecnologia client server sia come applicazioni web; tutte sviluppate in ambiente Microsoft Windows."
+    technology: Microsoft Visual Studio, C#, ASP.NET MVC, MMSQL Server
+
+  - work: Applicazioni web
+    period: 2010-2018
+    company: Archimedia
+    description: "Sviluppo applicazione web che raccoglie varie procedure organizzative implementate all'interno dell'
+    azienda del committente. Il lavoro è stato svolto on site presso il cliente, anche perchè una delle peculiarità
+    dell'applicazione è l'interfacciamento con il software ERP azienda in ambiente AS/400"
+    technology: Ruby on Rails, Mysql, AS/400, RabbitMQ, Ruby
+
+  - work: Applicazioni web
+    period: 2010-2018
+    company: Archimedia
+    description: "Sviluppo applicazione web che raccoglie varie procedure organizzative implementate all'interno dell'
+    azienda del committente. Il lavoro è stato svolto on site presso il cliente, anche perchè una delle peculiarità
+    dell'applicazione è l'interfacciamento con il software ERP azienda in ambiente AS/400"
+    technology: Ruby on Rails, Mysql, AS/400, RabbitMQ, Ruby
+
+  - work: Applicazioni web
+    period: 2010-2015
+    company: Archimedia
+    description: ""
+    technology: Ruby on Rails, Mysql, AS/400, RabbitMQ, Ruby
+
+  - work: Dipendente
+    period: 1998-1999
+    company: Monkey sistemi
+    description: "Sviluppatore software in ambiente Microsoft Windows con linguaggio Visual Basic 6. Nel corso di questo
+    periodo ho sviluppato varie applicazioni minori, oltre ad un'applicazione per la gestione di un laboratorio
+    di analisi privato."
+    technology: Microsoft Visual Basic, MS Access
+
+  - work: Dipendente
+    period: 1996-1998
+    company: I.V.T. Informatica
+    description: "Sviluppatore software in ambiente Microsoft Windows con linguaggio Visual Basic 6 e Microsoft Access.
+    Oltre a sviluppare applicativi nuovi per le pubbliche amministrazioni, mi occupavo della manutenzione ed
+    assisteza di applicazioni per la pubblica amministrazione su sitema IBM S36. IVT Informatica era anche provider
+    di accesso ad internet, ed in quel periodo è iniziato il mio approccio verso internet."
+    technology: Microsoft Visual Basic, MS Access

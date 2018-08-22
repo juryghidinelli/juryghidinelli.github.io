@@ -38,14 +38,14 @@
 
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">My Resume</div>
+                <div class="text_content">CV</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
 
             <!-- .download_resume -->
             <a class="download" style="margin:0;float: left;" href="#">
-                <span data-hover="Download My Resume"><i class="glyphicon glyphicon-download-alt"></i> Download My Resume</span>
+                <span data-hover="Download CV"><i class="glyphicon glyphicon-download-alt"></i> Download CV</span>
             </a>
             <!-- /.download_resume -->
 
@@ -55,37 +55,44 @@
 
         <!-- .resume-left -->
         <div class="col-md-6 resume-left">
-            <!-- .title_content -->
-            <div class="title_content" style="margin-bottom:5px">
-                <div class="text_content">Experience</div>
-                <div class="clear"></div>
-            </div>
-            <!-- /.title_content -->
 
-            <!-- .attributes -->
-            <ul class="attributes">
-                <li class="first">
-                    <h5>Web Developer <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span>
-                    </h5>
-                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
+            {% assign datas = site.data.experience | sort %}
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus
-                        egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor
-                        Vivamus.</p>
-                </li>
-                <li>
-                    <h5>Front-End Developer <span class="duration"><i
-                            class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
-                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
+            {% for exps in datas %}
+                {% assign exp_type = exps[1] %}
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus
-                        egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor
-                        Vivamus.</p>
-                </li>
 
-            </ul>
-            <!-- /.attributes -->
-            <br>
+                <!-- .title_content -->
+                <div class="title_content" style="margin-bottom:5px">
+                    <div class="text_content">{{exp_type.title}}</div>
+                    <div class="clear"></div>
+                </div>
+                <!-- /.title_content -->
+
+
+
+                <!-- .attributes -->
+                <ul class="attributes">
+                    {% for sk in exp_type.experiences %}
+                        <li> <!--  class="first" -->
+                            <h5>{{sk.work}} <span class="duration"><i class="fa fa-calendar color"></i> {{sk.period}}</span>
+                            </h5>
+                            <h6><span class="fa fa-briefcase"></span> {{sk.company}}</h6>
+
+                            <p>{{sk.description}}</p>
+                        </li>
+                    {% endfor %}
+
+                </ul>
+                <!-- /.attributes -->
+                <br>
+            {% endfor %}
+
+
+
+
+
+
 
             <!-- .title_content -->
             <div class="title_content">
@@ -119,86 +126,12 @@
             <br>
 
 
-            <!-- .title_content -->
-            <div class="title_content">
-                <div class="text_content">Awards</div>
-                <div class="clear"></div>
-            </div>
-            <!-- /.title_content -->
-
-            <!-- .attributes -->
-            <ul class="attributes">
-                <li class="first">
-                    <h5>Graphic &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2014</span>
-                    </h5>
-                    <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
-
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn
-                        sollicitud. Sed vitae lectus elementum mauris.</p>
-                </li>
-                <li>
-                    <h5>Design &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2012 - 2013</span>
-                    </h5>
-                    <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
-
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn
-                        sollicitud. Sed vitae lectus elementum mauris.</p>
-                </li>
-
-            </ul>
-            <!-- /.attributes -->
-            <br>
-
         </div>
         <!-- /.resume-left -->
     </div>
 
     <div style="clear: both"></div>
 
-
-    <!-- client reference -->
-    <div class="row">
-        <div class="col-md-12">
-
-            <div class="reference clearfix">
-
-                <!-- .title_content -->
-                <div class="title_content" style="margin-bottom:5px">
-                    <div class="text_content">Client reference</div>
-                    <div class="clear"></div>
-                </div>
-                <!-- /.title_content -->
-
-
-                <ul>
-                    <li class="clearfix">
-                        <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
-
-                        <p>“Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-                            will model text, and a search for 'lorem ipsum' hope is uncover many web sites still”</p>
-                        <span>John Doe, UX Designer</span>
-                    </li>
-                    <li class="clearfix">
-                        <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
-
-                        <p>“very nice colleague she always helped me out if i didnt know something editors now use Lorem
-                            Ipsum as their default”</p>
-                        <span>Leia Calvi, UX Designer</span>
-                    </li>
-                    <li class="clearfix">
-                        <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
-
-                        <p>“old colleague and now close friend, she is really sweet and helpfull packages and web page
-                            editors now use Lorem Ipsum as their default will model text”</p>
-                        <span>Maria Callas, UX Designer</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div style="clear: both"></div>
-    </div>
 
 </div>
 <!-- End .resume -->

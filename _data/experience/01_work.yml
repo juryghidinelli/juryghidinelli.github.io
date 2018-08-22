@@ -110,6 +110,71 @@ experiences:
     per gli istituti bancari clienti del committente (società fornitrice degli istituti bancari)."
     technology: Java, GWT
 
+  - work: Client server
+    period: 2011-2018
+    company: Archimedia
+    description: "Sviluppo applicazione client server in linguaggio C# per la gestione del carico e lo scarico di
+    magazzini articoli dell'azienda produttrice. L'applicazione, interfacciata al database DB2 del sistem AS/400
+    ed all'ERP azienda, è in grado di gestire magazzini e locazioni. E' stata inoltre costruita un'interfaccia in
+    linguaggio Java installata su und dispositivo per la lettura di codici a barre wifi e di interrogazione della
+    locazione di magazzino di un determinato articolo."
+    technology: .NET, C#, DB2, AS/400, Ruby on Rails, Linux, Java
+
+  - work: Applicazione web
+    period: 2011-2018
+    company: Archimedia
+    description: "Sviluppo applicazione per la gestione di documenti tecnici di qualità e di informazioni relative.
+     L'applicazione si interfaccia al sistema ERP AS/400 per la raccolta delle informazioni necessarie."
+    technology: Ruby on Rails, Mysql, AS/400
+
+  - work: Client server
+    period: 2011-2016
+    company: Archimedia
+    description: "Sviluppo di un'applicazione client server in linguaggio C# ed interfacciamento attraverso porta
+    seriale per la raccolta dati di pressione/tempo collegate ad uno strumento di collaudo della pressione inserita
+    nell'articolo prodotto dal committente. Generazione grafici e report di collaudo dalle prove raccolte."
+    technology: C#, Mysql
+
+  - work: Applicazione web
+    period: 2008-2018
+    company: Archimedia
+    description: "Sviluppo applicazioni web CRM per vari clienti (circa 7) con varie personalizzazioni specifiche
+    con integrazione a sistema CMS Wordpress."
+    technology: Ruby on Rails, Mysql
+
+  - work: Applicazione web
+    period: 2005-2016
+    company: Archimedia
+    description: "Manutezione e sviluppo integrazioni software per la pianificazione della produzione per macchine,
+     articoli e commesse importate dal software gestionale AS/400."
+    technology: Delphi, Mysql, AS/400
+
+  - work: Applicazione web
+    period: 2005-2007
+    company: Archimedia
+    description: "Sviluppo applicazioni intranet varie in linguaggio ASP per la raccolta dati dei visitatori
+    nel sito produttivo del committente, per il riconoscimento documentale di etichette apposte ai documenti di
+    trasporto, scannerizzazione, catalogazione ed archiviazione nel sistema ERP aziendale"
+    technology: C#, MSSQL Server, ASP
+
+  - work: Applicazione web
+    period: 2002-2006
+    company: Archimedia
+    description: "Manutenzione e sviluppo integrazione software gestione commesse, preventivazione e gestione del
+    computo metrico."
+    technology: Delphi, Mysql
+
+  - work: Applicazione web
+    period: 2000-2008
+    company: Archimedia
+    description: "Sviluppo applicazione CRM per la gestione di contratti, clienti, appuntamenti, contabilità."
+    technology: PHP
+
+  - work: Applicazione web
+    period: 2000-2002
+    company: Archimedia
+    description: "Manutenzione e sviluppo software gestione commesse e progetti di lavoro."
+    technology: MSAccess
 
 
   - work: Dipendente

@@ -1,0 +1,45 @@
+title: Esperienze
+experiences:
+  - work: Applicazione web
+    period: 2017-2018
+    company: Archimedia
+    description: "Sviluppo e gestione progetto per la realizzazione di un'applicazione web per la creazione di progetti
+    simulati per la configurazione di prodotto. Il committente è produttore di articoli esclusivi che devono essere
+    inseriti in un progetto di più larga scala per l'utilizzo.
+    L'applicazione comprende un'area riservata amministrativa e
+    un'area riservata per l'utente finale. L'utente finale è in grado di realizzare un progetto atto all'utilizzo
+    del prodotto fornito dal committente."
+    technology: Ruby on Rails, VueJS, Alchemy CMS, MongoDB, Mysql, ThreeJS, Linux
+
+  - work: Applicazione web
+    period: 2014-2018
+    company: Archimedia
+    description: "Sviluppo e gestione progetto di un'applicazione web per la gestione di iscrizioni, anagrafiche,
+    generazione documenti per il calcolo delle rette ai servizi della pubblica amministrazione. L'applicazione si
+    compone di 5 moduli distinti (engine) che integralmente costituiscono la suite applicativa. I moduli si differenziano
+    per le tipologie di utenza a cui possono accedere."
+    technology: Ruby on Rails, Mysql, Linux, it Designers Italia
+
+  - work: Siti web
+    period: 2018
+    company: Archimedia
+    description: "Sviluppo e supervisione vari progetti riguardanti siti internet istituzionali di vari clienti
+    sviluppati con il CMS AlchemyCMS. "
+    technology: Ruby on Rails, SQLite, Linux, Alchemy CMS
+
+  - work: Applicazione web
+    period: 2013-2018
+    company: Archimedia
+    description: "Supervisione e gestione progetto per l'interfacciamento e la raccolta dati di dispositivi hardware
+     sviluppati dal committente. L'applicazione ha la duplice funzionalità di raccogliere i dati, di elaborarli e
+     archiviarli e di visualizzarli agli utenti dell'area riservata."
+    technology: Ruby on Rails, Mysql, MongoDB, RabbitMQ, NodeJS
+
+  - work: Applicazione web
+    period: 2013-2018
+    company: Archimedia
+    description: "Supervisione e progettazione applicazione per la pianificazione della produzione degli articoli
+    prodotti e lavorati dal committente. L'applicazione prevede l'importazione delle commesse di produzione, la
+    pianificazione per fasi e macchine, l'aggiornamento dello stato di avanzamento sia manuale che automatico
+    attraverso l'utilizzo delle Api sviluppate"
+    technology: Ruby on Rails, Mysql, ExtJS, MSSQLServer, Api Rest

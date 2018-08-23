@@ -20,6 +20,23 @@ experiences:
     del prodotto fornito dal committente."
     technology: Ruby on Rails, VueJS, Alchemy CMS, MongoDB, Mysql, ThreeJS, Linux
 
+  - work: e-commerce
+    period: 2016-2017
+    company: Archimedia
+    description: "Supervisione e gestione progetto e-commerce marketplace per la vendita di prodotti alimentari.
+    Personalizzazioni ed integrazioni sviluppate per seguire le linee guida e le regole di vendita definite dal
+    committente."
+    technology: Ruby on Rails, Alchemy CMS, Solidus, Mysql
+
+  - work: e-commerce
+    period: 2017-2018
+    company: Archimedia
+    description: "Supervisione e gestione progetto e-commerce per la vendita di prodotti di tipo licenze software.
+    Integrazione con software di terze parti per la gestione dell'helpdesk ed integrazions single sign on con software
+    di tipo forum. Realizzazione personalizzazione API per  l'integrazione di software proprietari del committente
+    per il rilascio di licenze dei software venduti."
+    technology: Ruby on Rails, Alchemy CMS, Solidus, Mysql
+
   - work: Applicazione web
     period: 1998-2018
     company: Archimedia
@@ -45,6 +62,13 @@ experiences:
      sviluppati dal committente. L'applicazione ha la duplice funzionalità di raccogliere i dati, di elaborarli e
      archiviarli e di visualizzarli agli utenti dell'area riservata."
     technology: Ruby on Rails, Mysql, MongoDB, RabbitMQ, NodeJS
+
+  - work: Applicazione web
+    period: 2015-2018
+    company: Archimedia
+    description: "Supervisione, svilluppo e gestione progetto di un'applicazione per la gestione di corsi di formazione
+    e di rilascio di attestati."
+    technology: Ruby on Rails, Mysql
 
   - work: Applicazione web
     period: 2013-2018

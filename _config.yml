@@ -1,19 +1,121 @@
+title: Jury Ghidinelli
+email: juryghidinelli@gmail.com
+author: Jury Ghidinelli
+description: > #
+  Questo blog raccoglie gli articoli che talvolta mi diletto a scrivere per mettere "nero
+  su bianco" alcune riflessioni, esperienze di lavoro, cose interssanti.
+baseurl:     ""
+url:         "https://juryghidinelli.github.io/"
+date_format: "%b %-d, %Y"
 
-title: Software Developer
-url: 'http://junlulocky.com'
-baseurl: '/PanelCV' #change it according to your repository name
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics: 
+google_tag_manager:
+# Bing services
+bing_verification:
 
+# Optional features
+animated:             true
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    true
+ajaxify_contact_form: false
+enable_mathjax: false
+extended_fonts: false
+enable_anchorjs: false
 
+# Facebook Page integration
+# (for instant articles and other stuff)
+fb_page: false
+fb_page_id:
 
-# Profile information
-yourname: Jury Ghidinelli  ## put your name
-title: 'Software Developer'  ## your title
-location: Brescia, IT
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: 
 
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
 
-## Social Profiles
-facebook: https://www.facebook.com/jury.ghidinelli  ## your facebook account url
-twitter: https://twitter.com/juryghidinelli  ## your twitter account url
-linkedin: https://www.linkedin.com/in/juryghidinelli/  ## your linkedin account url
-github: https://github.com/juryghidinelli  ## you dribbble account url
-instagram: https://www.instagram.com/juryghidinelli  ## your foursquare account url
+# Social icons
+github_username:  juryghidinelli
+bitbucket_username:
+stackoverflow_id: 
+twitter_username: juryghidinelli
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username: juryghidinelli
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: false
+share_twitter: false
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
+
+text:
+  pagination:
+    newer: 'Nuovi'
+    older: 'Vechi'
+  share_buttons:
+    text:         'Condividi articolo!'
+    facebook:     'Condividi con Facebook'
+    twitter:      'Condividi con Twitter'
+    googleplus:   'Condividi con Google+'
+    linkedin:     'Condividi con LinkedIn'
+    digg:         'Condividi con Digg'
+    tumblr:       'Condividi con Tumblr'
+    reddit:       'Condividi con Reddit'
+    stumbleupon:  'Condividi con StumbleUpon'
+    hackernews:   'Condividi con Hacker News'
+  post:
+    updated:        'Aggiornato'
+    minute_read:    'lettura'
+    related_posts:  'Articoli correlati'
+  index:
+    coming_soon: 'In arrivo...'
+  contact:
+    email:    'Email Address'
+    content:  'What would you like to say?'
+    subject:  'New submission!'
+    submit:   'Say Hello'
+    ajax:
+      sending:  'sending..'
+      sent:     'Message sent!'
+      error:    'Error!'
+  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    /:categories/:year/:month/:title.html
+paginate:     4
+sass:
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+exclude:
+  - bin
+  - vendor
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jury Ghidinelli</title>
+    <description>Questo blog raccoglie gli articoli che talvolta mi diletto a scrivere per mettere &quot;nero su bianco&quot; alcune riflessioni, esperienze di lavoro, cose interssanti.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>LEAP now has its own feed</title>
+        <description>&lt;p&gt;For a couple of years I have been using this blog to post
+snippets about new projects in the &lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects&quot;&gt;Little Electronics &amp;amp; Arduino Projects (LEAP)&lt;/a&gt; GitHub repo.&lt;/p&gt;
+
+&lt;p&gt;This was mainly a way to have a project link I could use as link bait;-) …
+but it was also a chore I could do without!&lt;/p&gt;
+
+&lt;p&gt;A little while back I revised the Jekyll static web site generator that runs over the
+&lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects&quot;&gt;LEAP repo&lt;/a&gt;
+and is responsible for
+for its accompanying site at &lt;a href=&quot;https://leap.tardate.com&quot;&gt;leap.tardate.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now the LEAP site renders each project nicely for the web, with social sharing support i.e. with twitter card, open graph etc.
+It also has an &lt;a href=&quot;https://leap.tardate.com/catalog/atom.xml&quot;&gt;RSS feed&lt;/a&gt; of all the projects as they are added.
+To dig under the cover of how this works, see notes in the &lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects/tree/master/catalog&quot;&gt;/catalog&lt;/a&gt; folder of the repo.&lt;/p&gt;
+
+&lt;p&gt;So in future, I’ll probably only post about LEAP projects on this blog if they are really really special in some way.
+And if you just want to follow the electronics stuff - follow &lt;a href=&quot;https://leap.tardate.com&quot;&gt;leap.tardate.com&lt;/a&gt; instead of this blog!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leap.tardate.com&quot;&gt;&lt;img src=&quot;https://leap.tardate.com/catalog/assets/images/nav-bg.jpg&quot; alt=&quot;hero_image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 07 Aug 2019 15:40:25 +0200</pubDate>
+        <link>http://localhost:4000/2019/08/leap-now-has-its-own-feed.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/leap-now-has-its-own-feed.html</guid>
+      </item>
+    
+      <item>
+        <title>LEAP#465 Mr BiJuT</title>
+        <description>&lt;p&gt;&lt;strong&gt;Mr BiJuT&lt;/strong&gt; is what I’m calling my freeform realisation of a simple NPN/PNP transistor testing circuit.&lt;/p&gt;
+
+&lt;p&gt;This is a nifty little design that I found in the
+&lt;a href=&quot;https://www.goodreads.com/book/show/3415601-radio-and-electronics-cookbook&quot;&gt;Radio and Electronics Cookbook&lt;/a&gt;.
+It is one of those circuits that is the height of simplicity but is also quite tricky in it’s own way!
+Whether you immediately “get” how it works depends very much on how you draw the schematic;-)&lt;/p&gt;
+
+&lt;p&gt;As always, &lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/BJT/MrBiJuT&quot;&gt;all notes, schematics and code are in the Little Electronics &amp;amp; Arduino Projects repo on GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/BJT/MrBiJuT&quot;&gt;&lt;img src=&quot;https://leap.tardate.com/Electronics101/BJT/MrBiJuT/assets/MrBiJuT_build.jpg&quot; alt=&quot;hero_image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 30 Mar 2019 11:36:55 +0100</pubDate>
+        <link>http://localhost:4000/2019/03/leap465-mr-bijut.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/leap465-mr-bijut.html</guid>
+      </item>
+    
+      <item>
+        <title>LEAP#461 The Goblin</title>
+        <description>&lt;p&gt;I remember lusting after an Ibanez Tube Screamer back in the day - they really were the stuff of legend.
+The most famous is perhaps the TS-808. After researching the original circuit and examining how it works in detail.
+I decided to build one with only a few modifications to the original circuit.
+I’m calling it The Goblin, owing to the custom stippled-green paint job I gave the 1590B enclosure.&lt;/p&gt;
+
+&lt;p&gt;As always, &lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/GuitarEffects/Goblin&quot;&gt;all notes, schematics and code are in the Little Electronics &amp;amp; Arduino Projects repo on GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/GuitarEffects/Goblin&quot;&gt;&lt;img src=&quot;https://leap.tardate.com/Electronics101/GuitarEffects/Goblin/assets/Goblin_build.jpg&quot; alt=&quot;hero_image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m really impressed with the sound it produces. Here’s a quick soundcheck and smoke test:&lt;/p&gt;
+
+&lt;iframe class=&quot;youtube-embed&quot; src=&quot;https://www.youtube.com/embed/gXs6lWLlBx0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sun, 10 Mar 2019 17:41:05 +0100</pubDate>
+        <link>http://localhost:4000/2019/03/leap461-the-goblin.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/leap461-the-goblin.html</guid>
+      </item>
+    
+  </channel>
+</rss>

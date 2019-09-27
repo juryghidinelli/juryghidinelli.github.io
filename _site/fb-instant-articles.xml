@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title></title>
+    <link>http://localhost:4000</link>
+    <description>
+      Questo blog raccoglie gli articoli che talvolta mi diletto a scrivere per mettere &quot;nero su bianco&quot; alcune riflessioni, esperienze di lavoro, cose interssanti.
+
+    </description>
+    
+        
+            <item>
+                <title>LEAP now has its own feed</title>
+                <link>http://localhost:4000/2019/08/leap-now-has-its-own-feed.html</link>
+                <content:encoded>
+                    <![CDATA[
+                    <p>For a couple of years I have been using this blog to post
+snippets about new projects in the <a href="https://github.com/tardate/LittleArduinoProjects">Little Electronics &amp; Arduino Projects (LEAP)</a> GitHub repo.</p>
+
+<p>This was mainly a way to have a project link I could use as link bait;-) …
+but it was also a chore I could do without!</p>
+
+<p>A little while back I revised the Jekyll static web site generator that runs over the
+<a href="https://github.com/tardate/LittleArduinoProjects">LEAP repo</a>
+and is responsible for
+for its accompanying site at <a href="https://leap.tardate.com">leap.tardate.com</a>.</p>
+
+<p>Now the LEAP site renders each project nicely for the web, with social sharing support i.e. with twitter card, open graph etc.
+It also has an <a href="https://leap.tardate.com/catalog/atom.xml">RSS feed</a> of all the projects as they are added.
+To dig under the cover of how this works, see notes in the <a href="https://github.com/tardate/LittleArduinoProjects/tree/master/catalog">/catalog</a> folder of the repo.</p>
+
+<p>So in future, I’ll probably only post about LEAP projects on this blog if they are really really special in some way.
+And if you just want to follow the electronics stuff - follow <a href="https://leap.tardate.com">leap.tardate.com</a> instead of this blog!</p>
+
+<p><a href="https://leap.tardate.com"><img src="https://leap.tardate.com/catalog/assets/images/nav-bg.jpg" alt="hero_image" /></a></p>
+
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/2019/08/leap-now-has-its-own-feed.html</guid>
+                <description>
+                    
+                    the Little Electronics &amp; Arduino Projects GitHub repo now has its own feed
+                    
+                </description>
+                <pubDate>Wed, 07 Aug 2019 15:40:25 +0200</pubDate>
+                <author>Jury Ghidinelli</author>
+            </item>
+        
+    
+        
+            <item>
+                <title>LEAP#465 Mr BiJuT</title>
+                <link>http://localhost:4000/2019/03/leap465-mr-bijut.html</link>
+                <content:encoded>
+                    <![CDATA[
+                    <p><strong>Mr BiJuT</strong> is what I’m calling my freeform realisation of a simple NPN/PNP transistor testing circuit.</p>
+
+<p>This is a nifty little design that I found in the
+<a href="https://www.goodreads.com/book/show/3415601-radio-and-electronics-cookbook">Radio and Electronics Cookbook</a>.
+It is one of those circuits that is the height of simplicity but is also quite tricky in it’s own way!
+Whether you immediately “get” how it works depends very much on how you draw the schematic;-)</p>
+
+<p>As always, <a href="https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/BJT/MrBiJuT">all notes, schematics and code are in the Little Electronics &amp; Arduino Projects repo on GitHub</a></p>
+
+<p><a href="https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/BJT/MrBiJuT"><img src="https://leap.tardate.com/Electronics101/BJT/MrBiJuT/assets/MrBiJuT_build.jpg" alt="hero_image" /></a></p>
+
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/2019/03/leap465-mr-bijut.html</guid>
+                <description>
+                    
+                    Mr BiJuT is a freeform realisation of a simple NPN/PNP transistor testing circuit using a CD4011 Schmitt oscillator
+                    
+                </description>
+                <pubDate>Sat, 30 Mar 2019 11:36:55 +0100</pubDate>
+                <author>Jury Ghidinelli</author>
+            </item>
+        
+    
+        
+            <item>
+                <title>LEAP#461 The Goblin</title>
+                <link>http://localhost:4000/2019/03/leap461-the-goblin.html</link>
+                <content:encoded>
+                    <![CDATA[
+                    <p>I remember lusting after an Ibanez Tube Screamer back in the day - they really were the stuff of legend.
+The most famous is perhaps the TS-808. After researching the original circuit and examining how it works in detail.
+I decided to build one with only a few modifications to the original circuit.
+I’m calling it The Goblin, owing to the custom stippled-green paint job I gave the 1590B enclosure.</p>
+
+<p>As always, <a href="https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/GuitarEffects/Goblin">all notes, schematics and code are in the Little Electronics &amp; Arduino Projects repo on GitHub</a></p>
+
+<p><a href="https://github.com/tardate/LittleArduinoProjects/tree/master/Electronics101/GuitarEffects/Goblin"><img src="https://leap.tardate.com/Electronics101/GuitarEffects/Goblin/assets/Goblin_build.jpg" alt="hero_image" /></a></p>
+
+<p>I’m really impressed with the sound it produces. Here’s a quick soundcheck and smoke test:</p>
+
+<iframe class="youtube-embed" src="https://www.youtube.com/embed/gXs6lWLlBx0" frameborder="0" allowfullscreen=""></iframe>
+
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/2019/03/leap461-the-goblin.html</guid>
+                <description>
+                    
+                    the Goblin is what I'm calling my remake of the classic Ibanez Tube Screamer 808, after researching how the circuit works and common modifications
+                    
+                </description>
+                <pubDate>Sun, 10 Mar 2019 17:41:05 +0100</pubDate>
+                <author>Jury Ghidinelli</author>
+            </item>
+        
+    
+  </channel>
+</rss>

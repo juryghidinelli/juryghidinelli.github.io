@@ -1,5 +1,11 @@
-    <footer class="footer">
-
-
-        
-    </footer>
+<footer class="center">
+  <div class="measure">
+    {% include navigation_links.html %}
+  </div>
+</footer>
+{% if site.enable_anchorjs %}<!-- AnchorJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
+<script>
+    anchors.options.visible = 'always';
+    anchors.add('post h2, post h3, post h4, post h5, post h6');
+</script>{% endif %}

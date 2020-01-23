@@ -28,5 +28,4 @@ Attualmente sono occupato con le seguenti aziende che si occuano di IT a 360 gra
 
 ---
 Il blog è stato creato con Jekyll e [ospitato su Github in questo repository](https://github.com/juryghidinelli/juryghidinelli.github.io).
-Come template di base è stato usato [pixyll.com](http://pixyll.com).
 

@@ -1,0 +1,22 @@
+{% for page in site.pages %}
+    {% if page.tags contains "about" %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+    {% if page.tags contains "curriculum_vitae" %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+    {% if page.tags contains "contact" %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
+{% for page in site.pages %}
+    {% if page.tags contains "catalog" %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}

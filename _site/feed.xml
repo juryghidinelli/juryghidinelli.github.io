@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jury Ghidinelli</title>
+    <description>Questo blog raccoglie gli articoli che talvolta mi diletto a scrivere per mettere &quot;nero su bianco&quot; alcune riflessioni, esperienze di lavoro, cose interssanti.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Benvenuto</title>
+        <description>&lt;p&gt;Benvenuti nel mio blog. 
+L’idea è quella di scrivere ed aggiornare con contenuti vari ed interessanti.
+Scriverò per lo più di lavoro, anche se credo non mancheranno anche contenuti extra.&lt;/p&gt;
+
+&lt;p&gt;Intanto è possibile consultare la pagina &lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt; e la pagina &lt;a href=&quot;/cv&quot;&gt;Curriculum vitae&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;
+    &lt;img src=&quot;/images/paint-by-salvador-dalì-of-a-modern-workplace-with-personal-computer.png&quot; alt=&quot;Immagine generata con Open-AI&quot; class=&quot;content-image&quot; /&gt;&lt;br /&gt;
+    &quot;DALL-E: Paint by Salvador Dalì of a modern workplace with personal computer&quot;
+&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 10 Jan 2023 08:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/01/benvenuto.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/01/benvenuto.html</guid>
+      </item>
+    
+  </channel>
+</rss>

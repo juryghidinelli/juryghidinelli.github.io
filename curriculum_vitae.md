@@ -175,7 +175,7 @@ Attualmente il mio ruolo è quello di responsabile sviluppo software, project ma
 
 ## Esperienze
 
-### 1999-2021 Project manager, Archimedia s.r.l.
+### 1999-2023 Project manager, Archimedia s.r.l.
 Socio fondatore della società Archimedia. Nel corso degli anni, mi sono occupato di seguire la parte di sviluppo software ed
 al supporto per la parte di hosting/housing della server farm di proprietà, della gestione del gruppo di lavoro e della pianificazione, organizzazione, 
 analisi, design e architettura dei progetti software. 
@@ -183,13 +183,24 @@ Oltre agli aspetti tecnici, mi sono occupato di supervisionare la parte amminist
 
 __Project management, Team lead__
 
+### 2020-2023 Gestione cluster Kubernates
+Affiancamento gestione cluster kubernates su provider Digilal Ocean. Configurazione deploy servizi.
+
+__K8s, Cluster, deploy, __
+
+
+### 2021 Acquisto on line contenuti digitali
+Coorinamento e sviluppo applicazione per la vendita di contenuti digitali (file) per consulenti del lavoro, uffici paghe e commercialisti. 
+
+__Ruby on Rails, VueJS, NuxtJS, WebDav__
+
 ### 2020 Coordinamento progetto Discourse, Archimedia s.r.l.
 Coorinamento di un progetto di migrazione da forum proprietario verso la piattaforma Discourse.
 
 __Ruby on Rails, Discourse__
 
 
-### 2017-2021 Sviluppo applicazione web, Archimedia s.r.l.
+### 2017-2023 Sviluppo applicazione web, Archimedia s.r.l.
 Sviluppo e gestione progetto per la realizzazione di un'applicazione web per la creazione di progetti simulati per la configurazione di prodotto. 
 Il committente è produttore di articoli esclusivi che devono essere inseriti in un progetto di più larga scala per l'utilizzo.
 L'applicazione comprende un'area riservata amministrativa e un'area riservata per l'utente finale. 
@@ -198,7 +209,7 @@ L'utente finale è in grado di realizzare un progetto atto all'utilizzo del prod
 __Ruby on Rails, VueJS, Alchemy CMS, MongoDB, Mysql, ThreeJS, Linux__
 
 
-### 2018-2021 Sviluppo applicazione web, Archimedia s.r.l.
+### 2018-2023 Sviluppo applicazione web, Archimedia s.r.l.
 Sviluppo e gestione progetto per la gestione di una rete di stazioni di bike sharing prodotta e realizzata dal committente.
 Oltre all'applicazione di gestione delle stazioni, è stata sviluppata anche l'applicazione mobile per l'utilizzo
 da parrte dell'utente finale.
@@ -213,14 +224,14 @@ Personalizzazioni ed integrazioni sviluppate per seguire le linee guida e le reg
 __Ruby on Rails, Alchemy CMS, Solidus, Mysql__
 
 
-### 2017-2021 e-commerce, Archimedia s.r.l.
+### 2017-2023 e-commerce, Archimedia s.r.l.
 Supervisione e gestione progetto e-commerce per la vendita di prodotti di tipo licenze software. 
 Integrazione con software di terze parti per la gestione dell'helpdesk ed integrazions single sign on con software di tipo forum. 
 Realizzazione personalizzazione API per l'integrazione di software proprietari del committente per il rilascio di licenze dei software venduti.
 
 __Ruby on Rails, Alchemy CMS, Solidus, Mysql__
 
-### 1998-2021 Applicazione web, Archimedia s.r.l.
+### 1998-2023 Applicazione web, Archimedia s.r.l.
 Sviluppo e gestione progetto di un'applicazione web per la gestione di iscrizioni, anagrafiche, generazione documenti per 
 il calcolo delle rette ai servizi della pubblica amministrazione. L'applicazione si compone di 5 moduli distinti (engine) 
 che integralmente costituiscono la suite applicativa. I moduli si differenziano per le tipologie di utenza a cui possono accedere. 
@@ -229,13 +240,13 @@ sviluppata in Visual Basic 6.0, la seconda in Microsoft ASP, la terza, quella at
 
 __Ruby on Rails, Mysql, Linux, it Designers Italia__
 
-### 2020-2021 Applicazione web, Archimedia s.r.l.
+### 2020-2023 Applicazione web, Archimedia s.r.l.
 Sviluppo e gestione progetto di un'applicazione web per la gestione e l'invio di richieste di pagamento PagoPA attraverso
 servizio MyPay di regione Lombardia.
 
 __Ruby on Rails, Mysql, Linux__
 
-### 2020-2021 Applicazione web, Archimedia s.r.l.
+### 2020-2023 Applicazione web, Archimedia s.r.l.
 Sviluppo e gestione progetto di un'applicazione web per il pagamento on line attraverso servizio MyPay di Regione Lombardia
 di contravvenzioni
 
@@ -248,20 +259,20 @@ Supervisione vari progetti riguardanti siti internet istituzionali di vari clien
 __Ruby on Rails, SQLite, Linux, Alchemy CMS__
 
 
-### 2013-2021 Applicazione web, Archimedia s.r.l.
+### 2013-2023 Applicazione web, Archimedia s.r.l.
 Supervisione e gestione progetto per l'interfacciamento e la raccolta dati di dispositivi hardware sviluppati dal committente. 
 L'applicazione ha la duplice funzionalità di raccogliere i dati, di elaborarli e archiviarli e di visualizzarli agli utenti dell'area riservata.
 
 __Ruby on Rails, Mysql, MongoDB, RabbitMQ, NodeJS__
 
 
-### 2015-2021 Applicazione web, Archimedia s.r.l.
+### 2015-2023 Applicazione web, Archimedia s.r.l.
 Supervisione, svilluppo e gestione progetto di un'applicazione per la gestione di corsi di formazione e di rilascio di attestati.
 
 __Ruby on Rails, Mysql__
 
 
-### 2013-2021 Applicazione web, Archimedia s.r.l.
+### 2013-2023 Applicazione web, Archimedia s.r.l.
 Supervisione e progettazione applicazione per la pianificazione della produzione degli articoli prodotti e 
 lavorati dal committente. L'applicazione prevede l'importazione delle commesse di produzione, la pianificazione per fasi e macchine, 
 l'aggiornamento dello stato di avanzamento sia manuale che automatico attraverso l'utilizzo delle Api sviluppate.
@@ -269,7 +280,7 @@ l'aggiornamento dello stato di avanzamento sia manuale che automatico attraverso
 __Ruby on Rails, Mysql, ExtJS, MSSQLServer, Api Rest__
 
 
-### 2010-2021 Applicazione web, Archimedia s.r.l.
+### 2010-2023 Applicazione web, Archimedia s.r.l.
 Supervisione, progettazione e sviluppo applicazione web multitenant per la gestione, la configurazione e
 l'organizzazione delle procedure di analisi di bilancio, controllo di gestione e consolidamento.
 L'applicazione, multitenant, multiutente, multiazienda e multigruppo viene venduta dal committente come
@@ -285,7 +296,7 @@ sviluppate sia con tecnologia client server sia come applicazioni web; tutte svi
 __Microsoft Visual Studio, C#, ASP.NET MVC, MMSQL Server__
 
 
-### 2010-2021 Applicazioni web, Archimedia s.r.l.
+### 2010-2023 Applicazioni web, Archimedia s.r.l.
 Sviluppo applicazione web che raccoglie varie procedure organizzative implementate all'interno dell' azienda del committente. 
 Il lavoro è stato svolto on site presso il cliente, anche perchè una delle peculiarità dell'applicazione
 è l'interfacciamento con il software ERP azienda in ambiente AS/400
@@ -315,7 +326,7 @@ bancari clienti del committente (società fornitrice degli istituti bancari).
 __Java, GWT__
 
 
-### 2011-2021 Applicazione web, Archimedia s.r.l.
+### 2011-2023 Applicazione web, Archimedia s.r.l.
 Sviluppo applicazione client server in linguaggio C# per la gestione del carico e lo scarico di magazzini articoli 
 dell'azienda produttrice. L'applicazione, interfacciata al database DB2 del sistem AS/400 ed all'ERP azienda, 
 è in grado di gestire magazzini e locazioni. E' stata inoltre costruita un'interfaccia in linguaggio Java installata 
@@ -324,7 +335,7 @@ su un dispositivo per la lettura di codici a barre wifi e di interrogazione dell
 __.NET, C#, DB2, AS/400, Ruby on Rails, Linux, Java__
 
 
-### 2011-2021 Applicazione web, Archimedia s.r.l.
+### 2011-2023 Applicazione web, Archimedia s.r.l.
 Sviluppo applicazione per la gestione di documenti tecnici di qualità e di informazioni relative. 
 L'applicazione si interfaccia al sistema ERP AS/400 per la raccolta delle informazioni necessarie.
 

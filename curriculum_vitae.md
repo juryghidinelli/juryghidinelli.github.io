@@ -184,9 +184,11 @@ Oltre agli aspetti tecnici, mi sono occupato di supervisionare la parte amminist
 __Project management, Team lead__
 
 ### 2020-2023 Gestione cluster Kubernates
-Affiancamento gestione cluster kubernates su provider Digilal Ocean. Configurazione deploy servizi.
+Affiancamento gestione cluster Kubernates su provider Digilal Ocean. Configurazione deploy servizi web.
+Utilizzando il provedier Digital Ocean, abbiamo creato un'infrastruttura a 5 nodi K8S che ci permette, attraverso Gitlab ed ArgoCD, di 
+pubblicare i servizi web che sviluppiamo.
 
-__K8s, Cluster, deploy, __
+__K8s, Cluster, deploy__
 
 
 ### 2021 Acquisto on line contenuti digitali

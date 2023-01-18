@@ -8,6 +8,158 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Organizzare il lavoro</title>
+        <description>&lt;h2&gt; Il lavoro &lt;/h2&gt;
+
+&lt;p&gt;Quand’ero giovane, o meglio, quand’ero più giovane di ora :-), dopo i 14-15 anni finita la scuola secondaria, 
+era abbastanza comune che durante il periodo estivo ci si adoperasse per trovare qualche lavoro da fare, un pò 
+per cominciare a guadagnare qualche spicciolo da mettere da parte, un pò come attività formativa rivolta al mondo del lavoro; 
+ci si trovava quindi a fare la “stagione” come cameriere, come pizzaiolo, come operaio in fabbrica, come aiutante muratore, 
+oppure, qualora non si trovasse nulla, c’erano sempre i genitori che pensavo a trovare qualche cosa da fare. 
+Mi sono quindi trovato nella mia “gioventù”, a confrontarmi con il lavoro nei campi, a fare il boscaiolo, a fare 
+l’aiuto muratore e l’aiuto pizzaiolo. Le prime cose che si imparano a fare certe tipologie di lavoro sono in realtà 
+comuni e piuttosto generali : il lavoro in sicurezza, l’ordine, l’attenzione, la cura degli strumenti e della postazione di lavoro.
+Attualmente, non così spesso mi ritrovo a fare i lavori che ho fatto in gioventù, tuttavia il lavoro che faccio 
+ora segue le stesse regole di base ed in quest’articolo mi soffermerò in particolare sugli strumenti ed i metodi di lavoro.&lt;/p&gt;
+
+&lt;h2&gt; Organizzazione &lt;/h2&gt;
+
+&lt;p&gt;Non è possibile eseguire un buon lavoro senza organizzazione, l’organizzazione del lavoro è fondamentale per 
+poter produrre prodotti e servizi che rispecchino le richieste all’interno de budget fissato. Nel nostro ambito organizzare 
+il lavoro significa fare in modo che il processo di sviluppo di un software segua un percorso predefinito e predeterminato. 
+Non necessariamente questo flusso è sempre lo stesso, dipende dalla tipologia di software che si vuole creare, dipende 
+dagli attori coinvolti, dalle funzionalità, dall’ambito; quello invece che è comune è che questo percorso deve seguire 
+un tracciato predefinito con delle regole prestabilite, in pratica deve essere organizzato. L’organizzazione generale 
+per lo sviluppo di servizi software che ci siamo costruiti prevede i seguenti punti:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pre analisi: idea, brainstorming, spunti, obiettivi&lt;/li&gt;
+  &lt;li&gt;Prototipazione: prototipo, design, interfaccia utente&lt;/li&gt;
+  &lt;li&gt;Analisi tecnica: architettura, modello dati, funzionalità, strumenti&lt;/li&gt;
+  &lt;li&gt;Sviluppo: stesura codice, dimensionamento database, configurazione servizi&lt;/li&gt;
+  &lt;li&gt;Rilascio: configurazione sistema di stage, di test, di produzione&lt;/li&gt;
+  &lt;li&gt;Monitoraggio: monitoraggio performance e monitoraggio errori proattivo&lt;/li&gt;
+  &lt;li&gt;Miglioramenti: idee, spunti, brainstorming&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Metodi &lt;/h2&gt;
+
+&lt;p&gt;L’elenco dei punti precedentemente descritti, di fatto non è altro che un metodo (una serie di regole e comportamenti) 
+che ci siamo dati per organizzare il processo di lavoro dall’inizio alla fine; è quindi importante darsi dei metodi, 
+delle regole, per poter raggiungere un certo obiettivo in modo efficace. Entrando più nello specifico dello sviluppo 
+software in senso tecnico, ci siamo dati delle nostre regole da seguire:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Seguire le regole della twelve-factor app che è una metodologia di sviluppo orientata alla costruzione di applicazioni software-as-a-service&lt;/li&gt;
+  &lt;li&gt;Seguire la regola DRY “Don’t repeat yourself”, non ripetersi, e in senso più generale, “Don’t reinvent the wheel”, non reinventare la ruota&lt;/li&gt;
+  &lt;li&gt;Seguire la metodologia TDD: Test Driven Development, sviluppo guidato dai test&lt;/li&gt;
+  &lt;li&gt;Specializzazione: utilizzo di strumenti, pattern, linguaggi specifici per problemi specifici&lt;/li&gt;
+  &lt;li&gt;Condivisione: condivisione delle conoscenze tra i gruppi di lavoro&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Strumenti &lt;/h2&gt;
+
+&lt;p&gt;“Dammi sei ore per abbattere un albero, e passerò le prime quattro ore ad affilare la scure.” Abramo Lincoln lo 
+diceva nell’accezione di farsi trovare pronti nel momento del bisogno, a me piace riportarlo in senso letterale, 
+cioè il valore e l’importanza di avere strumenti adeguati ed in ordine (la scure) rispetto al lavoro da svolgere 
+(il taglio  dell’albero).
+Del resto, a pensarci bene, gli strumenti sono fondamentali per tutti i lavori: il cuoco deve avere coltelli affilati 
+e postazione sempre pulita, tanto quanto il muratore, il falegname o l’operaio specializzato; in tutti i lavori servono 
+strumenti, per così dire “affilati”, metodo, precisione, pulizia, attenzione nell’utilizzo degli stessi; il lavoro di 
+sviluppo software, non fa eccezione.&lt;/p&gt;
+
+&lt;p&gt;Gli strumenti a disposizione per lo sviluppo software sono innumerevoli e coprono i più svariati aspetti ed ambiti; 
+quelli che  di seguito elenco sono i principali (ma non i soli) che normalmente utilizziamo.&lt;/p&gt;
+
+&lt;h2&gt; Linguaggi di sviluppo &lt;/h2&gt;
+
+&lt;p&gt;Il linguaggio di sviluppo è il primo e fondamentale strumento che serve ad un professionista dello sviluppo applicativo.
+Ogni linguaggio ha, come ogni cosa, punti di forza e punti di debolezza rispetto all’ambito di utilizzo, pertanto non 
+esiste (a mio parere) il linguaggio che in assoluto è perfetto in ogni ambito; essendo il linguaggio di sviluppo uno
+strumento, esiste uno strumento giusto per ogni lavoro. L’esperienza ci ha insegnato più di un linguaggio di programmazione, 
+alcuni addirittura non più utilizzati, altri che utilizzeremo in futuro. Di seguito i linguaggi di programmazione (attuali) 
+che fanno parte del nostro bagaglio di conoscenza:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+  &lt;li&gt;Javascript&lt;/li&gt;
+  &lt;li&gt;Php&lt;/li&gt;
+  &lt;li&gt;Java&lt;/li&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;C#&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Controllo di versione del codice sorgente &lt;/h2&gt;
+
+&lt;p&gt;A mio avviso è il secondo fondamentale strumento utile a chiunque sviluppi un software; non importa se si sviluppa soli o si fa parte di un team, l’utilizzo di questo strumento è sempre e comunque un vantaggio.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Git&lt;/li&gt;
+  &lt;li&gt;Gitlab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Framework &lt;/h2&gt;
+
+&lt;p&gt;Il framework è una struttura, un’ossatura basata su di un linguaggio di programmazione; azzardando un paragone 
+tra un’applicazione software ad un’automobile, il framework può essere visto come il pianale, lo scheletro dell’automobile 
+sopra il quale vengono installati i vari componenti. Ci sono vari framework per i vari linguaggi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby on rails&lt;/li&gt;
+  &lt;li&gt;NodeJS&lt;/li&gt;
+  &lt;li&gt;VueJS&lt;/li&gt;
+  &lt;li&gt;Twitter Bootstrap&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Deploy e monitoring &lt;/h2&gt;
+
+&lt;p&gt;Quando si sviluppa un’applicazione, un sito web, un sistema complesso, lo sviluppo è “solo” la prima parte del lavoro. 
+E’ infatti altrettanto importante e fondamentale il deploy ed il monitoring per gestire correttamente in produzione un’applicazione sviluppata.
+E’ importante infatti non perdere mai di vista quello che fondamentalmente è un’applicazione software, cioè uno strumento 
+(a sua volta) che in ultima istanza genera valore, di conseguenza quando non funziona, o quando funziona male, si ha di 
+fatto (sempre in ultima istanza) una perdita. Gli strumenti che ci aiutano ad assolvere il processo di deploy e monitoring 
+che abbiamo scelto sono:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Docker&lt;/li&gt;
+  &lt;li&gt;Gitalab CI&lt;/li&gt;
+  &lt;li&gt;K8s&lt;/li&gt;
+  &lt;li&gt;Zabbix&lt;/li&gt;
+  &lt;li&gt;Graphana, Prometheus&lt;/li&gt;
+  &lt;li&gt;Elasticsearch, Logstash, Kibana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Gestione dei dati &lt;/h2&gt;
+
+&lt;p&gt;La maggior parte delle applicazioni che sviluppiamo, necessita di un sistema per la persistenza dei dati, 
+in parole povere di un database. Anche in questo ambito, l’esperienza ci ha portato a conoscerne un certo numero, 
+ed anche in questo caso, esistono database migliori di altri dipendentemente dall’ambito di utilizzo. I sistemi di 
+gestione del dato che utilizziamo sono:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Postgresql&lt;/li&gt;
+  &lt;li&gt;Mysql&lt;/li&gt;
+  &lt;li&gt;MS SQL Server&lt;/li&gt;
+  &lt;li&gt;MongoDB&lt;/li&gt;
+  &lt;li&gt;Elasticsearch&lt;/li&gt;
+  &lt;li&gt;Redis&lt;/li&gt;
+  &lt;li&gt;RabbitMQ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt; Conclusione &lt;/h2&gt;
+&lt;p&gt;Rispetto alle regole di base che ho imparato nelle mie prime esperienze lavorative, quest’articolo descrive 
+solo gli strumenti declinati nel lavoro dello sviluppo di applicazioni. Tuttavia, anche gli altri aspetti fondamentali 
+quali lavoro in sicurezza, ordine, attenzione devono essere ben presenti ed applicabili; è infatti fondamentale curare 
+la sicurezza (dei dati con i backup, del software con lo studio e l’aggiornamento riguardo i problemi legati alla sicurezza 
+informatica e le vulnerabilità negli strumenti), l’ordine con la scrittura di codice ben documentato e ben strutturato, 
+l’attenzione a quando si effettua una modifica od un deploy.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Jan 2023 08:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/01/benvenuto.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/01/benvenuto.html</guid>
+      </item>
+    
+      <item>
         <title>Benvenuto</title>
         <description>&lt;p&gt;Benvenuti nel mio blog. 
 L’idea è quella di scrivere ed aggiornare con contenuti vari ed interessanti.

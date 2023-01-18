@@ -506,6 +506,10 @@ blockquote footer { background-color: #fff; border-color: transparent; color: #7
 
 .content-image { width: 400px; border-radius: 10%; }
 
+.post-summary { display: table-cell; }
+.post-summary img { float: left; width: 200px; border-radius: 2%; }
+.post-summary .summary-content { padding-left: 210px; }
+
 @media screen and (min-width: 32em) { html { font-size: 16px; }
   h1, .h1 { font-size: 1.8rem; }
   .site-header { text-align: left; }

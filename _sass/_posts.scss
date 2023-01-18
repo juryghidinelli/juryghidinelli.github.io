@@ -61,3 +61,16 @@
   width: 400px;
   border-radius: 10%;
 }
+
+.post-summary {
+  display: table-cell;
+  img {
+    float: left;
+    width: 200px;
+    border-radius: 2%;
+  }
+  .summary-content{
+    padding-left: 210px;
+  }
+}
+

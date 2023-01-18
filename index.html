@@ -10,11 +10,14 @@ layout: default
         <div class="post py3">
           <p class="post-meta">{{ page.date | date: site.date_format }} {% include post_tags.html %}</p>
           <a href="{{ page.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ page.title }}</h3></a>
-          <p class="post-summary">
-            {{ page.content }}
-            <br>
-            <a href="{{ page.url | prepend: site.baseurl }}" class="post-link more">continua a leggere...</a>
-          </p>
+          <div class="post-summary">
+            <img src="{{ site.baseurl }}/images/{{page.img}}"/>
+            <br/>
+            <p class="summary-content">
+              {{ page.summary }}
+              <a href="{{ page.url | prepend: site.baseurl }}" class="post-link more">continua a leggere...</a>
+            </p>
+          </div>
         </div>
       {% endfor %}
     </div>

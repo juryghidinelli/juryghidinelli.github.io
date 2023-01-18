@@ -3,7 +3,10 @@ layout:         post
 title:          "Benvenuto"
 date:           "2023-01-10 08:00:00 +0100"
 hero_image_url: 
-summary:        "Post di benvenuto"
+summary:        "Benvenuti nel mio blog.
+L'idea è quella di scrivere ed aggiornare con contenuti vari ed interessanti.
+Scriverò per lo più di lavoro, anche se credo non mancheranno anche contenuti extra"
+img:   "paint-by-salvador-dalì-of-a-modern-workplace-with-personal-computer.png"
 tags:
 - Generico
 ---

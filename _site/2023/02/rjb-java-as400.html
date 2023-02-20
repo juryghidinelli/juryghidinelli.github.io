@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ruby, Java, AS400 &#8211; Jury Ghidinelli</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdn.mathjax.org">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ruby, Java, DB2 e picking di un magazzino, modernizzare un'ERP AS/400 con chiamate JSON Rest.v ">
+    <meta name="robots" content="all">
+    <meta name="author" content="Jury Ghidinelli">
+    
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:4000/2023/02/rjb-java-as400.html">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Jury Ghidinelli" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/site.css?202302201342" type="text/css">
+
+    <!-- Fonts -->
+    
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- MathJax -->
+    
+
+    <!-- Verifications -->
+    
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ruby, Java, AS400">
+    <meta property="og:description" content="Questo blog raccoglie gli articoli che talvolta mi diletto a scrivere per mettere &quot;nero su bianco&quot; alcune riflessioni, esperienze di lavoro, cose interssanti.
+">
+    <meta property="og:url" content="http://localhost:4000/2023/02/rjb-java-as400.html">
+    <meta property="og:site_name" content="Jury Ghidinelli">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@juryghidinelli" />
+    
+    <meta name="twitter:title" content="Ruby, Java, AS400" />
+    <meta name="twitter:description" content="Ruby, Java, DB2 e picking di un magazzino, modernizzare un'ERP AS/400 con chiamate JSON Rest.v " />
+    <meta name="twitter:url" content="http://localhost:4000/2023/02/rjb-java-as400.html" />
+    
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    
+</head>
+
+<body class="site animated fade-in-down">
+  
+	
+
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000" class="site-title">Jury Ghidinelli</a>
+      <nav class="site-nav">
+        
+    
+
+    
+        <a href="/about/">About</a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+    
+
+    
+
+    
+
+    
+        <a href="/cv/">Curriculum vitae</a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+        <a href="/catalog/">Indice degli articoli</a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+      </nav>
+      <div class="clearfix"></div>
+      <div class="social-icons">
+  <div class="social-icons-left">
+      Jury Ghidinelli
+  </div>
+  
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/juryghidinelli"></a>
+    
+    
+    
+    
+      <a class="fa fa-twitter" href="https://twitter.com/juryghidinelli"></a>
+    
+    
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:juryghidinelli@gmail.com"></a>
+    
+    
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/juryghidinelli"></a>
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+  
+</div>
+<div class="clearfix"></div>
+
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Ruby, Java, AS400</h1>
+  <span class="post-meta">Feb 20, 2023 
+<span class="label label-primary">Ruby</span>
+</span><br>
+  
+  <span class="post-meta small">
+  
+    3 lettura
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h2>Gem and Jar</h2>
+
+<p>L’ecosistema Ruby è molto florido nello sviluppo di librerie. Molti contributori, sia di Ruby che di Ruby on Rails,
+sono sviluppatori molto preparati. Il sevizio che raggruppa le librerire dell’ecosistema Ruby è
+<a href="https://rubygems.org/">Rubygems</a>; ad oggi conta circa 174.000 gemme per un totale di 122 miliardi di download.</p>
+
+<p>Una delle gemme che ho iniziato ad usare fin da subito è stata <a href="https://github.com/arton/rjb">Rjb</a>.
+Si tratta di una libreria che permette di includere, librerie Jar Java, all’interno di un’applicazione Ruby.
+L’affinità di Ruby con Java è abbastanza forte, esiste infatti l’implementazione del linguaggio Ruby con la Java Virtual
+Machine <a href="https://github.com/jruby/jruby">JRuby</a></p>
+
+<p>Visto che Java vanta un ecosistema di librerie piuttosto importante e consolidato, poter utilizzare le librerie Java con Rjb, 
+apre un mondo di possibilità; java è uno dei linguaggi più diffusi, moderni e maturi, è utilizzato in sistemi enterprise e non 
+a caso l’affinità con aziende quali IBM e Oracle (per citare le prime) è consolidata e duratura.</p>
+
+<p>IBM è anche il produttore di soluzioni hardware (AS/400) e software (DB2) che vantano una storia lunga ormai più di mezzo secolo,
+molto diffusi a livello aziendale e che spesso ho incrociato nella mia vita lavorativa.
+A dimostrazione di ciò, tra le mansioni del mio primo lavoro c’era anche l’installazione di applicativi scritti in linguaggio RPG su sistemi S/36,
+il sistema predecessore di AS/400.</p>
+
+<p>Parentesi: a quel tempo (1996) il sistema S/36 era già un sistema inadeguato ed era già stato sostituito
+da AS/400 inoltre esistevano già le prime reti di PC Windows.</p>
+
+<p>IBM, nel corso degli anni, ha adottato Java per lo sviluppo di parecchie soluzioni enterprise e proprio per questo 
+sono disponibili lirerie Java/JDBC per il collegamento al database server di IBM DB/2.</p>
+
+<h2>Il progetto</h2>
+
+<p>Un’azienda manifatturiera, cliente di lunga data, mi chiese un sistema che permettesse di gestire il picking degli articoli di magazzino, attraverso 
+la lettura di un codice a barre, e che generasse dei movimenti di carico e scarico nel sistema ERP aziendale. Partendo
+da questa richiesta cominciai ad esplorare le componenti del progetto necessarie per l’implementazione:</p>
+
+<ul>
+<li> Dispositivo wireless per la lettura del codice a barre</li>
+<li> Applicazione con UI da installare sul dispositivo</li>
+<li> Interfaccia Api in/out da esporre all'applicazione sul dispositivo</li>
+<li> Interfaccia Database DB/2 per la generazione dei movimenti di magazzino</li>
+</ul>
+
+<h3>Dispositivo Wireless e UI</h3>
+
+<p>Il dispositivo individuato per l’installazione dell’applicazione di lettura del barcode e l’interrogazione del magazzino fu Nylux, un terminale
+con display, tastiera, wi-fi con installato Linux con il quale è possibile sviluppare con tecnologia Java (SWT) la user interface specifica.
+Attraverso Nylux, l’utente, leggendo il bar code di un articolo, può vederne la locazione a maggazzino attraverso le coordinate (scaffale, piano, cassetto) e
+la quantità disponibile, decidendo se procedere con il picking, il tutto attraverso l’applicazione Java installata sul terminale.</p>
+
+<h3>Interfaccia Api</h3>
+
+<p>Ma come fa il dispositivo a collegarsi al database dell’ERP dove persistono i dati? Attraverso un’applicazione che non ha logica ma solo un’interfaccia informativa?
+L’applicazione Java sviluppata per il dispositivo si collega attraverso protocollo HTTP ad una’applicazione di backend che espone le Api Rest JSON la quale 
+a sua volta contiene tutte le logiche di ricerca, elaborazione e recupero delle informazioni dal database del sistema ERP.
+L’applicazione che si occupa di fare da interfaccia tra il lettore di codici a barre ed il database del sistema ERP è 
+l’applicativo Ruby on Rails.</p>
+
+<p>Infatti grazie alla facilità con la quale si riescono a creare progetti MVC (Model View Controller) attraverso il framework Ruby on Rails, oltre
+all’organicità nel creare moderne Api Rest, è risultato semplice creare l’interfaccia “ponte” che rende disponibili
+le informazioni persistenti nel database del sistema ERP con il dispositivo wireless per l’interrogazione del magazzino
+attraverso la lettura di un codice a barre.</p>
+
+<p>Nell’applicativo Ruby on Rails inoltre, utilizzando le librerire Java JT400, librerire jar per il collegamento al database DB2, vengono creati 
+i modelli e la logica applicativa per l’interfacciamento ai dati e la registrazione dei movimenti, grazie alla gemma Rjb che, come detto,
+permette di utilizzare le librerie Java in un’applicazione Ruby.</p>
+
+<h2>Conclusione</h2>
+
+<p>Grazie ad un’applicazione Ruby on Rails già in produzione presso il cliente, sfruttando librerie già presenti, siamo riusciti
+ad interfacciare i dati persistenti di un database DB2 su sistema AS/400 con un dispositivo wireless per l’interrogazione
+delle disponibilità di magazzino; grazie alle tecnologie usate inoltre, il sistema risulta estendibile e scalabile.</p>
+
+
+</article>
+
+
+  <div class="share-page">
+
+  <div class="share-links">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <div class="social-icons">
+  <div class="social-icons-left">
+      Jury Ghidinelli
+  </div>
+  
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/juryghidinelli"></a>
+    
+    
+    
+    
+      <a class="fa fa-twitter" href="https://twitter.com/juryghidinelli"></a>
+    
+    
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:juryghidinelli@gmail.com"></a>
+    
+    
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/juryghidinelli"></a>
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+  
+</div>
+<div class="clearfix"></div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>

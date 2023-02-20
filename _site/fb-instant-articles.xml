@@ -10,80 +10,154 @@
     
         
             <item>
+                <title>Ruby, Java, AS400</title>
+                <link>http://localhost:4000/2023/02/rjb-java-as400.html</link>
+                <content:encoded>
+                    <![CDATA[
+                    <h2>Gem and Jar</h2>
+
+<p>L’ecosistema Ruby è molto florido nello sviluppo di librerie. Molti contributori, sia di Ruby che di Ruby on Rails,
+sono sviluppatori molto preparati. Il sevizio che raggruppa le librerire dell’ecosistema Ruby è
+<a href="https://rubygems.org/">Rubygems</a>; ad oggi conta circa 174.000 gemme per un totale di 122 miliardi di download.</p>
+
+<p>Una delle gemme che ho iniziato ad usare fin da subito è stata <a href="https://github.com/arton/rjb">Rjb</a>.
+Si tratta di una libreria che permette di includere, librerie Jar Java, all’interno di un’applicazione Ruby.
+L’affinità di Ruby con Java è abbastanza forte, esiste infatti l’implementazione del linguaggio Ruby con la Java Virtual
+Machine <a href="https://github.com/jruby/jruby">JRuby</a></p>
+
+<p>Visto che Java vanta un ecosistema di librerie piuttosto importante e consolidato, poter utilizzare le librerie Java con Rjb, 
+apre un mondo di possibilità; java è uno dei linguaggi più diffusi, moderni e maturi, è utilizzato in sistemi enterprise e non 
+a caso l’affinità con aziende quali IBM e Oracle (per citare le prime) è consolidata e duratura.</p>
+
+<p>IBM è anche il produttore di soluzioni hardware (AS/400) e software (DB2) che vantano una storia lunga ormai più di mezzo secolo,
+molto diffusi a livello aziendale e che spesso ho incrociato nella mia vita lavorativa.
+A dimostrazione di ciò, tra le mansioni del mio primo lavoro c’era anche l’installazione di applicativi scritti in linguaggio RPG su sistemi S/36,
+il sistema predecessore di AS/400.</p>
+
+<p>Parentesi: a quel tempo (1996) il sistema S/36 era già un sistema inadeguato ed era già stato sostituito
+da AS/400 inoltre esistevano già le prime reti di PC Windows.</p>
+
+<p>IBM, nel corso degli anni, ha adottato Java per lo sviluppo di parecchie soluzioni enterprise e proprio per questo 
+sono disponibili lirerie Java/JDBC per il collegamento al database server di IBM DB/2.</p>
+
+<h2>Il progetto</h2>
+
+<p>Un’azienda manifatturiera, cliente di lunga data, mi chiese un sistema che permettesse di gestire il picking degli articoli di magazzino, attraverso 
+la lettura di un codice a barre, e che generasse dei movimenti di carico e scarico nel sistema ERP aziendale. Partendo
+da questa richiesta cominciai ad esplorare le componenti del progetto necessarie per l’implementazione:</p>
+
+<ul>
+<li> Dispositivo wireless per la lettura del codice a barre</li>
+<li> Applicazione con UI da installare sul dispositivo</li>
+<li> Interfaccia Api in/out da esporre all'applicazione sul dispositivo</li>
+<li> Interfaccia Database DB/2 per la generazione dei movimenti di magazzino</li>
+</ul>
+
+<h3>Dispositivo Wireless e UI</h3>
+
+<p>Il dispositivo individuato per l’installazione dell’applicazione di lettura del barcode e l’interrogazione del magazzino fu Nylux, un terminale
+con display, tastiera, wi-fi con installato Linux con il quale è possibile sviluppare con tecnologia Java (SWT) la user interface specifica.
+Attraverso Nylux, l’utente, leggendo il bar code di un articolo, può vederne la locazione a maggazzino attraverso le coordinate (scaffale, piano, cassetto) e
+la quantità disponibile, decidendo se procedere con il picking, il tutto attraverso l’applicazione Java installata sul terminale.</p>
+
+<h3>Interfaccia Api</h3>
+
+<p>Ma come fa il dispositivo a collegarsi al database dell’ERP dove persistono i dati? Attraverso un’applicazione che non ha logica ma solo un’interfaccia informativa?
+L’applicazione Java sviluppata per il dispositivo si collega attraverso protocollo HTTP ad una’applicazione di backend che espone le Api Rest JSON la quale 
+a sua volta contiene tutte le logiche di ricerca, elaborazione e recupero delle informazioni dal database del sistema ERP.
+L’applicazione che si occupa di fare da interfaccia tra il lettore di codici a barre ed il database del sistema ERP è 
+l’applicativo Ruby on Rails.</p>
+
+<p>Infatti grazie alla facilità con la quale si riescono a creare progetti MVC (Model View Controller) attraverso il framework Ruby on Rails, oltre
+all’organicità nel creare moderne Api Rest, è risultato semplice creare l’interfaccia “ponte” che rende disponibili
+le informazioni persistenti nel database del sistema ERP con il dispositivo wireless per l’interrogazione del magazzino
+attraverso la lettura di un codice a barre.</p>
+
+<p>Nell’applicativo Ruby on Rails inoltre, utilizzando le librerire Java JT400, librerire jar per il collegamento al database DB2, vengono creati 
+i modelli e la logica applicativa per l’interfacciamento ai dati e la registrazione dei movimenti, grazie alla gemma Rjb che, come detto,
+permette di utilizzare le librerie Java in un’applicazione Ruby.</p>
+
+<h2>Conclusione</h2>
+
+<p>Grazie ad un’applicazione Ruby on Rails già in produzione presso il cliente, sfruttando librerie già presenti, siamo riusciti
+ad interfacciare i dati persistenti di un database DB2 su sistema AS/400 con un dispositivo wireless per l’interrogazione
+delle disponibilità di magazzino; grazie alle tecnologie usate inoltre, il sistema risulta estendibile e scalabile.</p>
+
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/2023/02/rjb-java-as400.html</guid>
+                <description>
+                    
+                    Ruby, Java, DB2 e picking di un magazzino, modernizzare un'ERP AS/400 con chiamate JSON Rest.v 
+                    
+                </description>
+                <pubDate>Mon, 20 Feb 2023 08:00:00 +0100</pubDate>
+                <author>Jury Ghidinelli</author>
+            </item>
+        
+    
+        
+            <item>
                 <title>Organizzare il lavoro</title>
-                <link>http://localhost:4000/2023/01/benvenuto.html</link>
+                <link>http://localhost:4000/2023/01/organizzazione-lavoro.html</link>
                 <content:encoded>
                     <![CDATA[
                     <h2> Il lavoro </h2>
 
 <p>Quand’ero giovane, o meglio, quand’ero più giovane di ora :-), dopo i 14-15 anni finita la scuola secondaria, 
 era abbastanza comune che durante il periodo estivo ci si adoperasse per trovare qualche lavoro da fare, un pò 
-per cominciare a guadagnare qualche spicciolo da mettere da parte, un pò come attività formativa rivolta al mondo del lavoro; 
-ci si trovava quindi a fare la “stagione” come cameriere, come pizzaiolo, come operaio in fabbrica, come aiutante muratore, 
-oppure, qualora non si trovasse nulla, c’erano sempre i genitori che pensavo a trovare qualche cosa da fare. 
-Mi sono quindi trovato nella mia “gioventù”, a confrontarmi con il lavoro nei campi, a fare il boscaiolo, a fare 
-l’aiuto muratore e l’aiuto pizzaiolo. Le prime cose che si imparano a fare certe tipologie di lavoro sono in realtà 
-comuni e piuttosto generali : il lavoro in sicurezza, l’ordine, l’attenzione, la cura degli strumenti e della postazione di lavoro.
-Attualmente, non così spesso mi ritrovo a fare i lavori che ho fatto in gioventù, tuttavia il lavoro che faccio 
-ora segue le stesse regole di base ed in quest’articolo mi soffermerò in particolare sugli strumenti ed i metodi di lavoro.</p>
+per cominciare a guadagnare qualche lira da mettere da parte, un pò come attività formativa rivolta al mondo del lavoro. 
+Ci si trovava quindi a fare la “stagione” come cameriere, come pizzaiolo, come operaio in fabbrica, come aiutante muratore, 
+oppure, qualora non si trovasse nulla, i genitori ed i nonni pensavo a trovare qualche cosa da fare. 
+Mi sono quindi trovato da ragazzino, a confrontarmi con il lavoro nei campi, a fare il boscaiolo, a fare 
+l’aiuto muratore e l’aiuto pizzaiolo. 
+Durante queste attività formative, le prime cose che si imparano sono in realtà 
+comuni e piuttosto generali: la sicurezza, l’ordine, l’attenzione, la cura degli strumenti e la cura del risultato.
+Attualmente non faccio (quasi) più le attività che facevo da ragazzino, ciò nonostante, le regole imparate durante quel
+periodo sono comunque fondamentali; in quest’articolo mi soffermerò in particolare sugli strumenti ed i metodi di lavoro.</p>
 
 <h2> Organizzazione </h2>
 
 <p>Non è possibile eseguire un buon lavoro senza organizzazione, l’organizzazione del lavoro è fondamentale per 
-poter produrre prodotti e servizi che rispecchino le richieste all’interno de budget fissato. Nel nostro ambito organizzare 
+poter produrre prodotti e servizi che rispecchino le richieste all’interno de budget fissato. Nel mio ambito organizzare 
 il lavoro significa fare in modo che il processo di sviluppo di un software segua un percorso predefinito e predeterminato. 
 Non necessariamente questo flusso è sempre lo stesso, dipende dalla tipologia di software che si vuole creare, dipende 
-dagli attori coinvolti, dalle funzionalità, dall’ambito; quello invece che è comune è che questo percorso deve seguire 
-un tracciato predefinito con delle regole prestabilite, in pratica deve essere organizzato. L’organizzazione generale 
-per lo sviluppo di servizi software che ci siamo costruiti prevede i seguenti punti:</p>
-
-<ul>
-  <li>Pre analisi: idea, brainstorming, spunti, obiettivi</li>
-  <li>Prototipazione: prototipo, design, interfaccia utente</li>
-  <li>Analisi tecnica: architettura, modello dati, funzionalità, strumenti</li>
-  <li>Sviluppo: stesura codice, dimensionamento database, configurazione servizi</li>
-  <li>Rilascio: configurazione sistema di stage, di test, di produzione</li>
-  <li>Monitoraggio: monitoraggio performance e monitoraggio errori proattivo</li>
-  <li>Miglioramenti: idee, spunti, brainstorming</li>
-</ul>
+dagli attori coinvolti, dalle funzionalità, dall’ambito; quello invece che è comune, è che questo flusso deve seguire 
+un percorso predefinito con delle regole prestabilite; in pratica deve essere organizzato.</p>
 
 <h2> Metodi </h2>
 
-<p>L’elenco dei punti precedentemente descritti, di fatto non è altro che un metodo (una serie di regole e comportamenti) 
-che ci siamo dati per organizzare il processo di lavoro dall’inizio alla fine; è quindi importante darsi dei metodi, 
-delle regole, per poter raggiungere un certo obiettivo in modo efficace. Entrando più nello specifico dello sviluppo 
-software in senso tecnico, ci siamo dati delle nostre regole da seguire:</p>
+<p>Per organizzare il lavoro è necessario seguire dei metodi (una serie di regole e comportamenti), 
+per poter raggiungere un certo obiettivo in modo efficace. Entrando più nello specifico dello sviluppo 
+software in senso tecnico, le regole utili da seguire sono:</p>
 
 <ul>
   <li>Seguire le regole della twelve-factor app che è una metodologia di sviluppo orientata alla costruzione di applicazioni software-as-a-service</li>
   <li>Seguire la regola DRY “Don’t repeat yourself”, non ripetersi, e in senso più generale, “Don’t reinvent the wheel”, non reinventare la ruota</li>
   <li>Seguire la metodologia TDD: Test Driven Development, sviluppo guidato dai test</li>
   <li>Specializzazione: utilizzo di strumenti, pattern, linguaggi specifici per problemi specifici</li>
-  <li>Condivisione: condivisione delle conoscenze tra i gruppi di lavoro</li>
+  <li>Condivisione: condivisione della conoscenza</li>
 </ul>
 
 <h2> Strumenti </h2>
 
 <p>“Dammi sei ore per abbattere un albero, e passerò le prime quattro ore ad affilare la scure.” Abramo Lincoln lo 
-diceva nell’accezione di farsi trovare pronti nel momento del bisogno, a me piace riportarlo in senso letterale, 
-cioè il valore e l’importanza di avere strumenti adeguati ed in ordine (la scure) rispetto al lavoro da svolgere 
+diceva nell’accezione di farsi trovare pronti nel momento del bisogno, a me piace riportarlo in senso letterale 
+cioè, il valore e l’importanza di avere strumenti adeguati ed in ordine (la scure) rispetto al lavoro da svolgere 
 (il taglio  dell’albero).
 Del resto, a pensarci bene, gli strumenti sono fondamentali per tutti i lavori: il cuoco deve avere coltelli affilati 
-e postazione sempre pulita, tanto quanto il muratore, il falegname o l’operaio specializzato; in tutti i lavori servono 
-strumenti, per così dire “affilati”, metodo, precisione, pulizia, attenzione nell’utilizzo degli stessi; il lavoro di 
-sviluppo software, non fa eccezione.</p>
-
-<p>Gli strumenti a disposizione per lo sviluppo software sono innumerevoli e coprono i più svariati aspetti ed ambiti; 
-quelli che  di seguito elenco sono i principali (ma non i soli) che normalmente utilizziamo.</p>
+e postazione sempre pulita, tanto come il muratore, il falegname o l’operaio specializzato.
+In tutti i lavori servono strumenti, per così dire “affilati” ed il lavoro di sviluppo software non fa eccezione.
+Gli strumenti a disposizione per lo sviluppo software sono innumerevoli e coprono i più svariati aspetti ed ambiti.</p>
 
 <h2> Linguaggi di sviluppo </h2>
 
 <p>Il linguaggio di sviluppo è il primo e fondamentale strumento che serve ad un professionista dello sviluppo applicativo.
 Ogni linguaggio ha, come ogni cosa, punti di forza e punti di debolezza rispetto all’ambito di utilizzo, pertanto non 
 esiste (a mio parere) il linguaggio che in assoluto è perfetto in ogni ambito; essendo il linguaggio di sviluppo uno
-strumento, esiste uno strumento giusto per ogni lavoro. L’esperienza ci ha insegnato più di un linguaggio di programmazione, 
-alcuni addirittura non più utilizzati, altri che utilizzeremo in futuro. Di seguito i linguaggi di programmazione (attuali) 
-che fanno parte del nostro bagaglio di conoscenza:</p>
+strumento, esiste uno strumento adeguato per ogni lavoro. L’esperienza mi ha portato ad imparare più di un linguaggio di programmazione, 
+alcuni addirittura non più utilizzati, altri che potrebbero essere utilizzati in futuro.</p>
 
 <ul>
   <li>Ruby</li>
@@ -105,7 +179,7 @@ che fanno parte del nostro bagaglio di conoscenza:</p>
 
 <h2> Framework </h2>
 
-<p>Il framework è una struttura, un’ossatura basata su di un linguaggio di programmazione; azzardando un paragone 
+<p>Il framework è una struttura, un’ossatura costruita sulla base di un linguaggio di programmazione; azzardando un paragone 
 tra un’applicazione software ad un’automobile, il framework può essere visto come il pianale, lo scheletro dell’automobile 
 sopra il quale vengono installati i vari componenti. Ci sono vari framework per i vari linguaggi:</p>
 
@@ -118,12 +192,11 @@ sopra il quale vengono installati i vari componenti. Ci sono vari framework per 
 
 <h2> Deploy e monitoring </h2>
 
-<p>Quando si sviluppa un’applicazione, un sito web, un sistema complesso, lo sviluppo è “solo” la prima parte del lavoro. 
+<p>Quando si sviluppa un’applicazione, un sistema complesso, lo sviluppo è “solo” la prima parte del lavoro. 
 E’ infatti altrettanto importante e fondamentale il deploy ed il monitoring per gestire correttamente in produzione un’applicazione sviluppata.
 E’ importante infatti non perdere mai di vista quello che fondamentalmente è un’applicazione software, cioè uno strumento 
-(a sua volta) che in ultima istanza genera valore, di conseguenza quando non funziona, o quando funziona male, si ha di 
-fatto (sempre in ultima istanza) una perdita. Gli strumenti che ci aiutano ad assolvere il processo di deploy e monitoring 
-che abbiamo scelto sono:</p>
+(a sua volta) che in ultima istanza genera valore, di conseguenza quando non funziona o quando funziona male, si ha di 
+fatto (sempre in ultima istanza) una perdita. Gli strumenti che ci aiutano ad assolvere il processo di deploy e monitoring sono:</p>
 
 <ul>
   <li>Docker</li>
@@ -136,10 +209,9 @@ che abbiamo scelto sono:</p>
 
 <h2> Gestione dei dati </h2>
 
-<p>La maggior parte delle applicazioni che sviluppiamo, necessita di un sistema per la persistenza dei dati, 
-in parole povere di un database. Anche in questo ambito, l’esperienza ci ha portato a conoscerne un certo numero, 
-ed anche in questo caso, esistono database migliori di altri dipendentemente dall’ambito di utilizzo. I sistemi di 
-gestione del dato che utilizziamo sono:</p>
+<p>La maggior parte delle applicazioni necessitano di un sistema per la persistenza dei dati; in parole povere di un database. 
+Anche in questo ambito, l’esperienza mi ha portato a conoscerne un certo numero, 
+ed anche in questo caso, esistono database migliori di altri dipendentemente dall’ambito di utilizzo.</p>
 
 <ul>
   <li>Postgresql</li>
@@ -152,22 +224,22 @@ gestione del dato che utilizziamo sono:</p>
 </ul>
 
 <h2> Conclusione </h2>
-<p>Rispetto alle regole di base che ho imparato nelle mie prime esperienze lavorative, quest’articolo descrive 
+<p>Rispetto alle regole di base che ho imparato nelle mie prime esperienze lavorative, ho descritto 
 solo gli strumenti declinati nel lavoro dello sviluppo di applicazioni. Tuttavia, anche gli altri aspetti fondamentali 
 quali lavoro in sicurezza, ordine, attenzione devono essere ben presenti ed applicabili; è infatti fondamentale curare 
-la sicurezza (dei dati con i backup, del software con lo studio e l’aggiornamento riguardo i problemi legati alla sicurezza 
+la sicurezza (dei dati con i backup, del software con l’analisi dei problemi legati alla sicurezza 
 informatica e le vulnerabilità negli strumenti), l’ordine con la scrittura di codice ben documentato e ben strutturato, 
 l’attenzione a quando si effettua una modifica od un deploy.</p>
 
                     ]]>
                 </content:encoded>
-                <guid isPermaLink="false">/2023/01/benvenuto.html</guid>
+                <guid isPermaLink="false">/2023/01/organizzazione-lavoro.html</guid>
                 <description>
                     
                     Quand'ero giovane, o meglio, quand'ero più giovane di ora :-), dopo i 14-15 anni finita la scuola secondaria, era abbastanza comune che durante il periodo estivo ci si adoperasse per trovare qualche lavoro da fare, un pò per cominciare a guadagnare qualche spicciolo da mettere da parte, un pò come attività formativa rivolta al mondo del lavoro
                     
                 </description>
-                <pubDate>Thu, 12 Jan 2023 08:00:00 +0100</pubDate>
+                <pubDate>Wed, 18 Jan 2023 08:00:00 +0100</pubDate>
                 <author>Jury Ghidinelli</author>
             </item>
         
